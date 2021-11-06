@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+body,
+html {
+  height: 100%;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: url("/images/weeding.jpg") no-repeat center center/cover;
+  /* Full height */
+
+  height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(243, 247, 229, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero * {
+  z-index: 10;
+}
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 130px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  /* position: fixed; */
+  top: 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  color: #0a0708;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40%;
+  /* on small scren dont push at aside */
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 45px;
+}
+
+.hero .content p {
+  font-size: 22px;
+  max-width: 500px;
+  margin: 5px 0 30px;
+}
+
+/* animate button */
+
+.btn-primary {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  /* color: #868b8e; */
+  font-family: roboto;
+  font-size: 1.3rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.btn-primary::after {
+  background-color: #e7d2cc;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.btn-primary:hover::after {
+  transform: translate(0, 0);
+}
+.btn-primary:hover {
+  border: 2px solid transparent;
+  color: #0a0a0a;
+  transform: scale(1.05) will-change transform;
+}
+
+/* main screen */
+
+/* main {
+  position: relative;
+  height: 100%;
+} */
+
+.card {
+  background: rgba(243, 242, 230, 0.4);
+  padding: 0.6em;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ContainerphotosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+
+  /* height: 50%; */
+}
+
+/* does it nessecery */
+article {
+  display: grid;
+  align-items: center; /* vertically center items */
+  justify-content: center; /* horizontally center items */
+}
+
+/* foter */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.25fr;
+}
+
+.form {
+  background-color: #eeede7;
+  color: black;
+  padding: 1rem 1rem 2rem;
+}
+
+.form p {
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.social article {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-items: center;
+}
+
+.social,
+.contactInfo {
+  background-color: #b9b7bd;
+  color: #fff;
+  padding: 1rem 1rem 0;
+  text-align: center;
+}
+
+.social h3 {
+  border-bottom: solid 1px#E7D2CC;
+  font-weight: 400;
+  padding-bottom: 0.25rem;
+}
+
+.contactInfo {
+  background-color: #e7d2cc;
+  color: #233156;
+  padding: 1rem 0 0;
+  grid-column: 1 / -1;
+}
+
+.contactInfo article {
+  border-top: solid 1px #868b8e;
+  padding: 1rem 0;
+}
+
+.contactInfo h4 {
+  font-weight: 400;
+}
+.contactInfo li {
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.copy {
+  font-size: 80%;
+  font-weight: 300;
+  padding-top: 1rem;
+}

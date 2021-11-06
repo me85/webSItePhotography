@@ -1,0 +1,44 @@
+/* mobile css */
+
+.ContainerphotosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.logo img {
+  max-width: 100px;
+  max-height: 80px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  padding: 70px 0px 0px 10px;
+}
+
+nav ul {
+  padding-left: 0px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li a {
+  padding: 8px 12px 10px 12px;
+}
+.hero .content {
+  height: 30%;
+}
+.hero .content p {
+  display: none;
+}
+
+.btn-primary {
+  padding: 1rem 1rem;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+}

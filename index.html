@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobileCss.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
-    <title>Welcome to Adi website</title>
+    <title>FotografiskAdi</title>
   </head>
   <body>
     <header class="hero">
@@ -14,9 +22,12 @@
         <div class="logo">
           <img src="./images/new-logo.png" alt="logo" />
         </div>
-        <!-- <h1>PHOTOGRAPHY & CINEMATOGRAPHY</h1> -->
         <nav>
-          <ul>
+          <!-- <button class="menu-trigger">
+            <i class="fas fa-bars"></i>
+            <span>Click to open</span>
+          </button> -->
+          <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#video">Video</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -26,18 +37,84 @@
       </div>
       <div class="content">
         <h1>Creating Memories is what I Do</h1>
-        <p>We provide fantastic phograpic experience</p>
+        <p>We provide fantastic photograpic experience</p>
         <button class="btn-primary">call Me</button>
       </div>
     </header>
     <main>
       <div class="parallax"></div>
-      <div class="floatDiv"></div>
-      <div class="parallax"></div>
-      <div class="floatDiv"></div>
-      <div class="parallax"></div>
-      <div class="floatDiv"></div>
-      <div class="parallax"></div>
+      <section class="floatDiv">
+        <div class="ContainerphotosGrid">
+          <article class="card">
+            <img src="./images/1N0A0851.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/1N0A5190.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A0316.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A0471.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3759.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3796.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3759.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3796.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3759.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3796.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3759.jpg" alt="wedding" />
+          </article>
+          <article class="card">
+            <img src="./images/AJ1A3796.jpg" alt="wedding" />
+          </article>
+        </div>
+      </section>
     </main>
+    <footer>
+      <!-- contact form -->
+      <section class="form">
+        <h3>Got questions? fell free to Contact me !</h3>
+        <p>i would love to give you more information about any of my photograpic services</p>
+      </section>
+      <!-- social media -->
+      <section class="social">
+        <article>
+          <h3>let's be social-contact me!</h3>
+          <div class="socialIcons">
+            <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="http://instagram.com" target="_blank"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </article>
+      </section>
+      <!-- Contact Info -->
+      <section class="contactInfo">
+        <article>
+          <h4>Contact Information</h4>
+          <ul>
+            <li>Phone: 0522360608</li>
+            <li>Email: adi.bienstein@gmail.com</li>
+            <li>Address: kfar-saba</li>
+          </ul>
+          <p class="copy">Bienstein &copy;2021</p>
+        </article>
+      </section>
+    </footer>
   </body>
 </html>
